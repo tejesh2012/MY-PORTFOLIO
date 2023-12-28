@@ -1,9 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400&display=swap');
+
 *{
     padding: 0 ;
     margin: 0;
     box-sizing: border-box;
     outline: none;
+    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
     
+}
+body {
+  overflow-x: hidden;
 }
 :root{
     --bgOrange: #e84949;
@@ -36,6 +44,7 @@
     width: 30px;
     height: 35px;
     margin-right: -8px;
+    filter: drop-shadow(5px 5px 5px rgba(75, 72, 72, 0.815));
     
 
 
@@ -51,8 +60,9 @@
 .logo-container{
     display: flex;
     justify-content: baseline;
+    align-items: center;
 
-    margin-left: 10%;
+    /* margin-left: 10%; */
 }
 .nav-item{
     display: flex;
@@ -87,6 +97,7 @@
     gap: 5rem;
     margin: 4rem 12%;
     padding-bottom: 8rem;
+
 }    
 
 .faded-text{
@@ -509,11 +520,10 @@
 
 
   .skill-container{
-    position: relative;
-    width: 1000px;
+      position: relative;
     display: flex;
     padding: 5rem;
-    margin: 3rem auto;
+    margin: 5rem auto;
     gap: 30px;
     /* overflow-x: hidden; */
 
@@ -524,10 +534,9 @@
     font-size: 8em;
     font-style: bold;
     color: rgb(231,231,231);
-    bottom: -16%;
-    right: -13.5%;
+    bottom: -22%;
+    right: -3%;
     user-select: none;
-    overflow-y: hidden;
     
 
   }
@@ -575,7 +584,7 @@
     transform: translate(-50%,-50%);
     animation: blobAnimate 3s  linear infinite;
     z-index: -5;
-    width: 200px;
+    width: 50%;
 
   }
   @keyframes blobAnimate{
@@ -589,10 +598,14 @@
     width: 60px;
     height: 60px;
     transition: all 0.5s;
+    filter: drop-shadow( 5px 5px 4px #13131f);
   }
 .skill-logo:hover{
   transform: scale(1.2);
 }
+
+
+/* contact us section started  */
 
   .contactus-form-container{
     width: 100%;
@@ -605,27 +618,28 @@
     padding-top: 2rem;
     
     font-weight:bold;
-    line-height: 3rem;
-    margin-left: 6%;
+    /* line-height: 3rem; */
+    /* margin-left: 6%; */
   }
   .contactus-subheading{
     font-size: 2rem;
     color: #343d68aa;
     text-transform: capitalize;
-    margin-left: 8%;
+    /* margin-left: 8%; */
 
   }
   .contactus-form-container{
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
   }
 .form{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 30px;
-  width: 70%;
+  /* width: 70%; */
   margin:2rem 5rem;
 
 }
@@ -665,7 +679,7 @@
 }
 .submit-icon{
   padding: 0 1rem;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   
 }
 
@@ -678,9 +692,9 @@ footer{
 }
 .footer-wrapper{
   display:flex ;
-  /* gap: 1rem; */
+  gap: 1rem;
   padding: 1.2rem;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
 }
@@ -722,7 +736,7 @@ footer{
 
 /* media queries start  */
 
-  @media (max-width:1200px) {
+  /* @media (max-width:1200px) {
     .page-header {
       padding-top: 30px;
       color: var(--bgOrange);
@@ -777,5 +791,5 @@ footer{
     .project-card:hover .project-content {
       scale: 0.55;
     }
-  }
+  } */
   /* media queries end  */
