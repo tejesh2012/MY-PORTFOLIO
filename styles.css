@@ -489,22 +489,22 @@ body {
 
   #project1{
     margin-left: 80px;
-    background: url(image/projects/Project1.png);
+    background: url(image/projects/Project1.png)center/cover ;
     background-size: cover;
   }
   #project2{
     margin-left: 160px;
-    background: url(image/projects/Project2.png);
-    background-size: cover;
+    background: url(image/projects/Project2.png) center/cover ; 
+    background-size: contain;
   }
   #project3{
     margin-left: 80px;
-    background: url(image/projects/Project3.png);
+    background: url(image/projects/Project3.png) center/cover ;
     background-size: cover;
   }
   #project4{
     margin-left: 160px;
-    background: url(image/projects/Project4.png);
+    background: url(image/projects/Project4.png) center/cover;
     background-size: cover;
   }
 
