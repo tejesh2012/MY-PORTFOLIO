@@ -306,3 +306,107 @@ justify-content: center;
 }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero-section-right {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.user-image img {
+  width: 150px;
+  height: 200px;
+  z-index: -8;
+}
+
+.user-image {
+  padding: 2.5rem;
+  filter: grayscale(1);
+  transition: all 5s;
+  animation: scaleImage 5s linear infinite;
+}
+
+@keyframes scaleImage {
+  0% {
+    filter: grayscale(0);
+    transform: scale(1);
+  }
+
+  50% {
+    filter: grayscale(1);
+    transform: scale(1.1);
+    box-shadow: 3px 3px 10px black;
+  }
+
+  100% {
+    filter: grayscale(0);
+    transform: scale(1);
+  }
+}
+
+.icon-dots img {
+  width: 35px;
+  height: 35px;
+}
+
+.icon-dots {
+  z-index: 9;
+  bottom: -1rem;
+  right: 0;
+  animation-name: dotsAnimation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes dotsAnimation {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Add media query for screens with a width between 280px and 480px */
+@media only screen and (min-width: 280px) and (max-width: 480px) {
+  .user-image {
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .icon-dots {
+    display: none; /* Hide the dots icon on smaller screens */
+  }
+
+  /* Add additional adjustments for smaller screens as needed */
+}
