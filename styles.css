@@ -94,10 +94,10 @@ body {
 
 .faded-text{
     user-select: none;
-    font-size: 3rem;
+    font-size: 4vw;
     color:rgb(231,231,231);
     bottom: -18.3%;
-    left: -19%;
+    left: -15%;
     transition: all 3s;
     font-weight: 900;
 
