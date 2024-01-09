@@ -170,12 +170,10 @@
  
 
 footer{
-   
-    /* margin-top: 0px; */
-  
+ 
     padding: 0;
     width: 100%;
-    /* height: auto; */
+  
   }
   .footer-wrapper{
     width: 100vw;
@@ -183,7 +181,6 @@ footer{
     padding: 60px;
   
   }
-
 
 
 }
