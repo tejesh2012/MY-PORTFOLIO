@@ -145,6 +145,7 @@ body {
   border: solid 2px transparent; /* Adjusted border size for smaller screens */
   position: relative;
   z-index: 1;
+  text-decoration: none;
 }
 
 .btn-pink::before {
@@ -169,6 +170,12 @@ body {
   border: solid 2px var(--bgOrange); /* Adjusted border size for smaller screens */
   color: white;
   border-color: black;
+}
+
+.btn-pink>a {
+ text-decoration-line: none;
+ color: inherit;
+ 
 }
 
   .hero-section-right {
